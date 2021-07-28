@@ -8,19 +8,28 @@
     <link rel="stylesheet" href="style.css">
     <style>
         textarea {
-            width: 80%;
+            width: 40%;
             height: 10vh;
-            display: block;
-            margin: 1rem;
+            display: inline;
+            margin: 2rem;
             padding: 1rem;
+            position: relative;
+            left: 33rem;
+            bottom:8rem;
+            
         }
 
         #output {
             border: 1px solid black;
             height: 10vh;
-            width: 80%;
+            width: 40%;
+            display: inline-block;
             margin: 1rem;
             padding: 1rem;
+            position: relative;
+            left: 60rem;
+            bottom: 4rem;
+            margin-right: 0%;
         }
     </style>
 </head>
@@ -41,15 +50,21 @@
         </ul>
     </nav>
 
-    <h1> Banana Talk, The Minion's Language</h1>
-    <textarea id="txt-input"
-        placeholder="put your sentence in English here and we will convert it to banana"></textarea>
-    <button id="btn-translate">Translate</button>
+    <div>
+    <h1 style="max-width:1300px; margin:auto; font-size: 4rem; position:relative; left:60px;"> Banana Talk, The <span style="color:#3730A3;"> Minion's</span> Language</h1>
+    <img src="images/minions.png" style="display:inline; width:400px;
+    position: relative; top:5rem; left:8rem" alt="">
+    <textarea id="txt-input" placeholder="put your sentence in English here and we will convert it to Banana..." style="font-size: 1rem;"></textarea>
+    <button id="btn-translate" style="text-align:center; font-size:50px; background-color:#3730A3; color:white; border-radius: 10px; position: relative;
+    left: 5rem; bottom:5rem;">Translate</button>
 
-    <div style="font-size: larger;"> Output will come here 👇</div>
+    <div style="font-size:1rem; position: relative;
+    right: 27.5rem; bottom:3rem; display: inline-block;"> Output will come here 👇</div>
     <div id="output"></div>
+    </div>
+    </div>
 
-    <footer class="footer" style="position:relative; top:5rem; ">
+    <footer class="footer" style="">
         <div class="footer-header">Social Media</div>
         <ul class="social-links list-non-bullet">
             <li class="list-item-inline">
